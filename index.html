@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Inventory</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Book Inventory</h1>
+    </header>
+    <div>
+        <nav class="nav">
+            <a href="home">HOME</a>
+            <a href="genre">Genre</a>
+            <a href="add">Your Books</a>
+            <a href="remove">Deleted Books</a>
+            <a href="about">ABOUT</a>
+        </nav>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>LIST</th>
+                    <th>RECOMMENDED</th>
+                    <th>QUANTITY</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="LIST">LIST:</label><input type="text" id="LIST" placeholder="Enter list"></td>
+                    <td><label for="RECOMMENDED">RECOMMENDED:</label><input type="number" id="RECOMMENDED" placeholder="Enter recommended"></td>
+                    <td><label for="quantity">Quantity:</label><input type="number" id="quantity" placeholder="Enter quantity"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="addToCart()">Add</button>
+        <button onclick="removeFromCart()">Remove</button>
+        <button onclick="calculateAmount()">Total</button>
+    </div>
+    <div class="book">
+        <img src="book1-cover.jpg" alt="Book 1 Cover">
+        <div class="book-details">
+            <h2>Book 1 Title</h2>
+            <p>Author: Author 1</p>
+        </div>
+    </div>
+    <div class="book">
+        <img src="book2-cover.jpg" alt="Book 2 Cover">
+        <div class="book-details">
+            <h2>Book 2 Title</h2>
+            <p>Author: Author 2</p>
+        </div>
+    </div>
+</body>
+</html>
